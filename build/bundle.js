@@ -68,9 +68,14 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-const sum = (a, b) => a + b;
+"use strict";
+
+
+var sum = function sum(a, b) {
+  return a + b;
+};
 
 module.exports = sum;
 
@@ -78,7 +83,10 @@ module.exports = sum;
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-const sum = __webpack_require__(0);
+"use strict";
+
+
+var sum = __webpack_require__(0);
 
 console.log(sum(7, 5));
 
